@@ -13,9 +13,7 @@ This project contains a led driver for the [WS2812](https://cdn-shop.adafruit.co
 5. [Further Reading](#further-reading)
 6. [Author](#author)
 
-# About the Project
-
-The following image presents the project in Proteus:
+# Schematic
 
 ![Proteus Project](./images/proteus_project.jpg)
 
