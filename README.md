@@ -98,7 +98,7 @@ The project applies the ideas of the [Application Notes AN1606](http://ww1.micro
 
 # Simulation Results
 
-This test sets all the pixels (8) in the color red, after that there is a delay of 2 ms for the rest. This code is located in the infinite loop, therefore the microcontroller does a refresh of the color of every pixel.
+This test sets all the pixels (8) in the color red, after that, there is a delay of 2 ms to reset the pixels. This code is located in the infinite loop, therefore the microcontroller does a refresh of the color of every pixel.
 
 It works in some occasions, but not always, the following two pictures were taken in the same test.
 
