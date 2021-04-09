@@ -102,7 +102,7 @@ The project applies the ideas of the [Application Notes AN1606](http://ww1.micro
 
 # Simulation Results
 
-This test sets the following colors in an 8x1 LED strip: Green - Blue - Yellow - Cyan - Magenta - Light Green - White.
+This test sets the following colors in an 8x1 LED strip: Red - Green - Blue - Yellow - Cyan - Magenta - Light Green - White.
 
 ![Tests](./images/test_01.jpg)
 
