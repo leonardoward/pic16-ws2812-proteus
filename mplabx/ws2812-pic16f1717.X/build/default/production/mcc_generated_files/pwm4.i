@@ -9663,12 +9663,3 @@ typedef uint32_t uint_fast32_t;
 
     CCPTMRSbits.P4TSEL = 0;
  }
-
- void PWM4_LoadDutyValue(uint16_t dutyValue)
- {
-
-     PWM4DCH = (dutyValue & 0x03FC)>>2;
-
-
-     PWM4DCL = (dutyValue & 0x0003)<<6;
- }

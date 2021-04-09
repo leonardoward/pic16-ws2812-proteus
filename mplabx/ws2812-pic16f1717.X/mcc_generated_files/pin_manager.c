@@ -76,8 +76,8 @@ void PIN_MANAGER_Initialize(void)
     ANSELx registers
     */
     ANSELD = 0xFF;
-    ANSELC = 0xE4;
-    ANSELB = 0x3F;
+    ANSELC = 0xC4;
+    ANSELB = 0x39;
     ANSELE = 0x07;
     ANSELA = 0x3E;
 
@@ -133,10 +133,13 @@ void PIN_MANAGER_Initialize(void)
     RC5PPS = 0x11;   //RC5->MSSP:SDO;    
     SSPCLKPPS = 0x13;   //RC3->MSSP:SCK;    
 }
-  
+
+/*
 void PIN_MANAGER_IOC(void)
 {   
 }
+ */
+
 
 /**
  End of File

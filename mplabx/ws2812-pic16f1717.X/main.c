@@ -74,33 +74,31 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-    
+    // Config SPI
     SPI_Open(SPI_DEFAULT);
-    //SSP1CON1bits.SSPEN = 1;
-    
-    // PWM4 70%   
-    //PWM4DCH = 0x03;   // PWM4DCH 3; 
-    //PWM4DCL = 0x40;   // PWM4DCL 1; 
-    // PWM4 50%   
-    //PWM4DCH = 0x02;   // PWM4DCH 2; 
-    //PWM4DCL = 0x40;   // PWM4DCL 1; 
-    // PWM4 40%   
-    //PWM4DCH = 0x01;   // PWM4DCH 1; 
-    //PWM4DCL = 0xC0;   // PWM4DCL 3; 
     
     // Clear all the pixels
     for(int i = 0; i < 8; i++) {
         writePixel(0,0,0);  // Black  
-    }
-    __delay_ms(1);          // Reset delay
+    }   
+    __delay_us(8);          // Reset delay
     
     while (1)
     {
+        
         // Show the color red in the 8 pixels
         for(int i = 0; i < 8; i++) {
-            writePixel(255, 0, 0);  // Red           
+            writePixel(255, 0, 0);      // Red   
+            writePixel(0, 255, 0);      // Green 
+            writePixel(0, 0, 255);      // Blue 
+            writePixel(255, 255, 0);    // Yellow
+            writePixel(0, 255, 255);    // Cyan 
+            writePixel(255, 0, 255);    // Magenta  
+            writePixel(100, 255, 180);  // Light Green
+            writePixel(255, 255, 255);  // White  
         }
-        __delay_ms(2);              // Reset
+        
+        __delay_us(8);              // Reset
     }
 }
 /**

@@ -9808,7 +9808,7 @@ typedef struct {
 
 
 static const spi_configuration_t spi_configuration[] = {
-    { 0x2a, 0x0, 0x9, 0 }
+    { 0x23, 0x0, 0x9, 0 }
 };
 
 void SPI_Initialize(void)
@@ -9820,7 +9820,7 @@ void SPI_Initialize(void)
     RC5PPS = 17;
 
     SSP1STAT = 0x00;
-    SSP1CON1 = 0x2A;
+    SSP1CON1 = 0x23;
     SSP1ADD = 0x09;
     TRISCbits.TRISC3 = 0;
     SSP1CON1bits.SSPEN = 0;
@@ -9839,58 +9839,4 @@ _Bool SPI_Open(spi_modes_t spiUniqueConfiguration)
         return 1;
     }
     return 0;
-}
-
-void SPI_Close(void)
-{
-    SSP1CON1bits.SSPEN = 0;
-}
-
-uint8_t SPI_ExchangeByte(uint8_t data)
-{
-    SSP1BUF = data;
-    while(!PIR1bits.SSP1IF);
-    PIR1bits.SSP1IF = 0;
-    return SSP1BUF;
-}
-
-void SPI_ExchangeBlock(void *block, size_t blockSize)
-{
-    uint8_t *data = block;
-    while(blockSize--)
-    {
-        SSP1BUF = *data;
-        while(!PIR1bits.SSP1IF);
-        PIR1bits.SSP1IF = 0;
-        *data++ = SSP1BUF;
-    }
-}
-
-
-void SPI_WriteBlock(void *block, size_t blockSize)
-{
-    uint8_t *data = block;
-    while(blockSize--)
-    {
-        SPI_ExchangeByte(*data++);
-    }
-}
-
-void SPI_ReadBlock(void *block, size_t blockSize)
-{
-    uint8_t *data = block;
-    while(blockSize--)
-    {
-        *data++ = SPI_ExchangeByte(0);
-    }
-}
-
-void SPI_WriteByte(uint8_t byte)
-{
-    SSP1BUF = byte;
-}
-
-uint8_t SPI_ReadByte(void)
-{
-    return SSP1BUF;
 }

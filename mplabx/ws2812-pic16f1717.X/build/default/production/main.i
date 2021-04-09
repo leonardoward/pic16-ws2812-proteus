@@ -9889,18 +9889,28 @@ void main(void)
     SYSTEM_Initialize();
 # 78 "main.c"
     SPI_Open(SPI_DEFAULT);
-# 92 "main.c"
+
+
     for(int i = 0; i < 8; i++) {
         do{ SSP1BUF = 0; while(!SSP1STATbits.BF); SSP1BUF = 0; while(!SSP1STATbits.BF); SSP1BUF = 0; while(!SSP1STATbits.BF);} while(0);;
     }
-    _delay((unsigned long)((1)*(32000000/4000.0)));
+    _delay((unsigned long)((8)*(32000000/4000000.0)));
 
     while (1)
     {
 
+
         for(int i = 0; i < 8; i++) {
             do{ SSP1BUF = 0; while(!SSP1STATbits.BF); SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 0; while(!SSP1STATbits.BF);} while(0);;
+            do{ SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 0; while(!SSP1STATbits.BF); SSP1BUF = 0; while(!SSP1STATbits.BF);} while(0);;
+            do{ SSP1BUF = 0; while(!SSP1STATbits.BF); SSP1BUF = 0; while(!SSP1STATbits.BF); SSP1BUF = 255; while(!SSP1STATbits.BF);} while(0);;
+            do{ SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 0; while(!SSP1STATbits.BF);} while(0);;
+            do{ SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 0; while(!SSP1STATbits.BF); SSP1BUF = 255; while(!SSP1STATbits.BF);} while(0);;
+            do{ SSP1BUF = 0; while(!SSP1STATbits.BF); SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 255; while(!SSP1STATbits.BF);} while(0);;
+            do{ SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 100; while(!SSP1STATbits.BF); SSP1BUF = 180; while(!SSP1STATbits.BF);} while(0);;
+            do{ SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 255; while(!SSP1STATbits.BF); SSP1BUF = 255; while(!SSP1STATbits.BF);} while(0);;
         }
-        _delay((unsigned long)((2)*(32000000/4000.0)));
+
+        _delay((unsigned long)((8)*(32000000/4000000.0)));
     }
 }

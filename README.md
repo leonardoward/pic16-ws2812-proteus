@@ -96,13 +96,13 @@ The project applies the ideas of the [Application Notes AN1606](http://ww1.micro
 
 ![CLC3 Pin](./images/clc3_pin.jpg)
 
+## Pin Module ##
+
+![Pin Module](./images/pin_module.jpg)
+
 # Simulation Results
 
-This test sets all the pixels (8) in the color red, after that, there is a delay of 2 ms to reset the pixels. This code is located in the infinite loop, therefore the microcontroller does a refresh of the color of every pixel.
-
-It works in some occasions, but not always, the following two pictures were taken in the same test.
-
-![Tests](./images/test_02.jpg)
+This test sets the following colors in an 8x1 LED strip: Green - Blue - Yellow - Cyan - Magenta - Light Green - White.
 
 ![Tests](./images/test_01.jpg)
 

@@ -29,29 +29,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13906
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h: 13906: extern volatile unsigned char CLC3CON __attribute__((address(0xF24)));
 [v _CLC3CON `Vuc ~T0 @X0 0 e@3876 ]
-"13912
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h: 13912:     struct {
-[s S681 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S681 . LC3MODE LC3INTN LC3INTP LC3OUT . LC3EN ]
-"13920
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h: 13920:     struct {
-[s S682 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S682 . LC3MODE0 LC3MODE1 LC3MODE2 ]
-"13925
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h: 13925:     struct {
-[s S683 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S683 . MODE INTN INTP OUT . EN ]
-"13933
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h: 13933:     struct {
-[s S684 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S684 . MODE0 MODE1 MODE2 ]
-"13911
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h: 13911: typedef union {
-[u S680 `S681 1 `S682 1 `S683 1 `S684 1 ]
-[n S680 . . . . . ]
-"13939
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h: 13939: extern volatile CLC3CONbits_t CLC3CONbits __attribute__((address(0xF24)));
-[v _CLC3CONbits `VS680 ~T0 @X0 0 e@3876 ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1717.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1023,20 +1000,4 @@ Version 4.0 HI-TECH Software Intermediate Code
 "83
 [; ;mcc_generated_files/clc3.c: 83: }
 [e :UE 782 ]
-}
-"86
-[; ;mcc_generated_files/clc3.c: 86: _Bool CLC3_OutputStatusGet(void)
-[v _CLC3_OutputStatusGet `(a ~T0 @X0 1 ef ]
-"87
-[; ;mcc_generated_files/clc3.c: 87: {
-{
-[e :U _CLC3_OutputStatusGet ]
-[f ]
-"88
-[; ;mcc_generated_files/clc3.c: 88:     return(CLC3CONbits.LC3OUT);
-[e ) -> . . _CLC3CONbits 0 3 `a ]
-[e $UE 783  ]
-"89
-[; ;mcc_generated_files/clc3.c: 89: }
-[e :UE 783 ]
 }

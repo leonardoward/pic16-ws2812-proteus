@@ -9585,8 +9585,8 @@ void PIN_MANAGER_Initialize(void)
 
 
     ANSELD = 0xFF;
-    ANSELC = 0xE4;
-    ANSELB = 0x3F;
+    ANSELC = 0xC4;
+    ANSELB = 0x39;
     ANSELE = 0x07;
     ANSELA = 0x3E;
 
@@ -9634,8 +9634,4 @@ void PIN_MANAGER_Initialize(void)
     RB2PPS = 0x0F;
     RC5PPS = 0x11;
     SSPCLKPPS = 0x13;
-}
-
-void PIN_MANAGER_IOC(void)
-{
 }

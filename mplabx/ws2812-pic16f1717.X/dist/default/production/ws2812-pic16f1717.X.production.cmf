@@ -13,20 +13,20 @@
 %PSECTS
 $dist/default/production\ws2812-pic16f1717.X.production.o
 cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 6E4 6E4 16 2
-text2 CODE 0 697 697 4 2
-text3 CODE 0 69B 69B 8 2
-text4 CODE 0 6CF 6CF 15 2
-text5 CODE 0 6A3 6A3 B 2
-text6 CODE 0 749 749 53 2
-text7 CODE 0 6AE 6AE C 2
-text8 CODE 0 6BA 6BA 15 2
-text9 CODE 0 6FA 6FA 4F 2
-maintext CODE 0 79C 79C 61 2
+text1 CODE 0 679 679 16 2
+text2 CODE 0 62C 62C 4 2
+text3 CODE 0 630 630 8 2
+text4 CODE 0 664 664 15 2
+text5 CODE 0 638 638 B 2
+text6 CODE 0 6DE 6DE 53 2
+text7 CODE 0 643 643 C 2
+text8 CODE 0 64F 64F 15 2
+text9 CODE 0 68F 68F 4F 2
+maintext CODE 0 731 731 CC 2
 cstackCOMMON COMMON 1 70 70 9 1
 stringtext1 STRCODE 0 800 800 4 2
 config CONFIG 4 8007 8007 2 2
-$C:\Users\lward\AppData\Local\Temp\saks.o
+$C:\Users\lward\AppData\Local\Temp\sek.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 4 8007 8007 2 2
@@ -59,9 +59,9 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 4-696 2
+CONST 4-62B 2
 CONST 804-1FFF 2
-ENTRY 4-696 2
+ENTRY 4-62B 2
 ENTRY 804-1FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
@@ -87,7 +87,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2000-23EF 1
-CODE 4-696 2
+CODE 4-62B 2
 CODE 804-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -104,9 +104,9 @@ BANK11 5A0-5EF 1
 BANK12 620-64F 1
 BIGRAM 2000-23EF 1
 COMMON 79-7D 1
-STRCODE 4-696 2
+STRCODE 4-62B 2
 STRCODE 804-1FFF 2
-STRING 4-696 2
+STRING 4-62B 2
 STRING 804-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -122,130 +122,136 @@ STRING 804-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\ws2812-pic16f1717.X.production.o
-7FD cinit CODE >4637:C:\Users\lward\AppData\Local\Temp\saks.s
-7FD cinit CODE >4640:C:\Users\lward\AppData\Local\Temp\saks.s
-7FD cinit CODE >4646:C:\Users\lward\AppData\Local\Temp\saks.s
-7FD cinit CODE >4648:C:\Users\lward\AppData\Local\Temp\saks.s
-7FE cinit CODE >4649:C:\Users\lward\AppData\Local\Temp\saks.s
-6FA text9 CODE >77:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6FB text9 CODE >79:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-700 text9 CODE >81:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-70F text9 CODE >82:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-71E text9 CODE >83:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-71F text9 CODE >84:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-72E text9 CODE >85:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-746 text9 CODE >86:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-748 text9 CODE >90:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6BA text8 CODE >58:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6BA text8 CODE >63:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6BD text8 CODE >65:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6BF text8 CODE >67:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6C1 text8 CODE >69:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6C3 text8 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6C4 text8 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6C6 text8 CODE >75:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6C8 text8 CODE >77:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6CA text8 CODE >79:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6CC text8 CODE >81:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6CE text8 CODE >83:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
-6AE text7 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6AE text7 CODE >65:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6B1 text7 CODE >67:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6B2 text7 CODE >69:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6B4 text7 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6B4 text7 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6B9 text7 CODE >74:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-749 text6 CODE >55:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-749 text6 CODE >60:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-74B text6 CODE >61:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-74C text6 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-74D text6 CODE >63:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-74E text6 CODE >64:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-74F text6 CODE >69:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-752 text6 CODE >70:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-754 text6 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-756 text6 CODE >72:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-758 text6 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-75A text6 CODE >78:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-75D text6 CODE >79:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-75F text6 CODE >80:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-761 text6 CODE >81:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-763 text6 CODE >82:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-765 text6 CODE >87:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-767 text6 CODE >88:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-768 text6 CODE >89:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-769 text6 CODE >90:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-76A text6 CODE >91:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-76B text6 CODE >92:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-76D text6 CODE >97:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-76F text6 CODE >98:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-770 text6 CODE >99:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-771 text6 CODE >100:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-772 text6 CODE >101:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-773 text6 CODE >106:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-776 text6 CODE >107:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-778 text6 CODE >108:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-77A text6 CODE >109:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-77C text6 CODE >110:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-77E text6 CODE >115:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-781 text6 CODE >116:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-783 text6 CODE >117:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-785 text6 CODE >118:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-787 text6 CODE >119:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-789 text6 CODE >128:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-78C text6 CODE >129:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-78F text6 CODE >130:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-791 text6 CODE >131:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-793 text6 CODE >132:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-796 text6 CODE >133:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-798 text6 CODE >134:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-79B text6 CODE >135:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
-6A3 text5 CODE >58:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
-6A3 text5 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
-6A6 text5 CODE >65:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
-6A8 text5 CODE >68:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
-6AA text5 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
-6AD text5 CODE >72:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
-6CF text4 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6CF text4 CODE >65:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6D2 text4 CODE >66:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6D4 text4 CODE >67:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6D7 text4 CODE >68:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6D9 text4 CODE >70:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6DB text4 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6DD text4 CODE >72:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6DF text4 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6E1 text4 CODE >74:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-6E3 text4 CODE >75:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
-69B text3 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
-69B text3 CODE >67:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
-69E text3 CODE >70:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
-69F text3 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
-6A0 text3 CODE >76:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
-6A2 text3 CODE >77:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
-697 text2 CODE >76:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-697 text2 CODE >79:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-69A text2 CODE >80:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6E4 text1 CODE >50:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6E4 text1 CODE >53:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6E7 text1 CODE >54:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6EA text1 CODE >55:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6ED text1 CODE >56:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6F0 text1 CODE >57:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6F3 text1 CODE >58:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6F6 text1 CODE >59:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-6F9 text1 CODE >60:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
-79C maintext CODE >58:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-79C maintext CODE >61:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-79F maintext CODE >78:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-7A3 maintext CODE >92:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-7A5 maintext CODE >93:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-7B5 maintext CODE >94:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-7C6 maintext CODE >95:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-7CE maintext CODE >100:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-7D0 maintext CODE >101:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-7E1 maintext CODE >102:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
-7F2 maintext CODE >103:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+7FD cinit CODE >4633:C:\Users\lward\AppData\Local\Temp\sek.s
+7FD cinit CODE >4636:C:\Users\lward\AppData\Local\Temp\sek.s
+7FD cinit CODE >4642:C:\Users\lward\AppData\Local\Temp\sek.s
+7FD cinit CODE >4644:C:\Users\lward\AppData\Local\Temp\sek.s
+7FE cinit CODE >4645:C:\Users\lward\AppData\Local\Temp\sek.s
+68F text9 CODE >77:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+690 text9 CODE >79:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+695 text9 CODE >81:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+6A4 text9 CODE >82:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+6B3 text9 CODE >83:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+6B4 text9 CODE >84:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+6C3 text9 CODE >85:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+6DB text9 CODE >86:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+6DD text9 CODE >90:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+64F text8 CODE >58:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+64F text8 CODE >63:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+652 text8 CODE >65:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+654 text8 CODE >67:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+656 text8 CODE >69:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+658 text8 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+659 text8 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+65B text8 CODE >75:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+65D text8 CODE >77:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+65F text8 CODE >79:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+661 text8 CODE >81:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+663 text8 CODE >83:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/clc3.c
+643 text7 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+643 text7 CODE >65:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+646 text7 CODE >67:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+647 text7 CODE >69:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+649 text7 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+649 text7 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+64E text7 CODE >74:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+6DE text6 CODE >55:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6DE text6 CODE >60:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6E0 text6 CODE >61:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6E1 text6 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6E2 text6 CODE >63:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6E3 text6 CODE >64:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6E4 text6 CODE >69:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6E7 text6 CODE >70:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6E9 text6 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6EB text6 CODE >72:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6ED text6 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6EF text6 CODE >78:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6F2 text6 CODE >79:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6F4 text6 CODE >80:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6F6 text6 CODE >81:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6F8 text6 CODE >82:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6FA text6 CODE >87:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6FC text6 CODE >88:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6FD text6 CODE >89:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6FE text6 CODE >90:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+6FF text6 CODE >91:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+700 text6 CODE >92:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+702 text6 CODE >97:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+704 text6 CODE >98:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+705 text6 CODE >99:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+706 text6 CODE >100:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+707 text6 CODE >101:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+708 text6 CODE >106:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+70B text6 CODE >107:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+70D text6 CODE >108:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+70F text6 CODE >109:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+711 text6 CODE >110:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+713 text6 CODE >115:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+716 text6 CODE >116:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+718 text6 CODE >117:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+71A text6 CODE >118:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+71C text6 CODE >119:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+71E text6 CODE >128:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+721 text6 CODE >129:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+724 text6 CODE >130:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+726 text6 CODE >131:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+728 text6 CODE >132:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+72B text6 CODE >133:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+72D text6 CODE >134:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+730 text6 CODE >135:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pin_manager.c
+638 text5 CODE >58:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
+638 text5 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
+63B text5 CODE >65:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
+63D text5 CODE >68:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
+63F text5 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
+642 text5 CODE >72:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/pwm4.c
+664 text4 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+664 text4 CODE >65:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+667 text4 CODE >66:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+669 text4 CODE >67:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+66C text4 CODE >68:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+66E text4 CODE >70:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+670 text4 CODE >71:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+672 text4 CODE >72:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+674 text4 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+676 text4 CODE >74:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+678 text4 CODE >75:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/spi.c
+630 text3 CODE >62:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
+630 text3 CODE >67:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
+633 text3 CODE >70:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
+634 text3 CODE >73:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
+635 text3 CODE >76:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
+637 text3 CODE >77:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/tmr2.c
+62C text2 CODE >76:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+62C text2 CODE >79:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+62F text2 CODE >80:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+679 text1 CODE >50:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+679 text1 CODE >53:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+67C text1 CODE >54:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+67F text1 CODE >55:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+682 text1 CODE >56:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+685 text1 CODE >57:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+688 text1 CODE >58:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+68B text1 CODE >59:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+68E text1 CODE >60:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\mcc_generated_files/mcc.c
+731 maintext CODE >58:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+731 maintext CODE >61:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+734 maintext CODE >78:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+738 maintext CODE >81:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+73A maintext CODE >82:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+74A maintext CODE >83:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+75B maintext CODE >84:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+75F maintext CODE >90:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+761 maintext CODE >91:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+772 maintext CODE >92:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+782 maintext CODE >93:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+792 maintext CODE >94:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+7A3 maintext CODE >95:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+7B4 maintext CODE >96:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+7C5 maintext CODE >97:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+7D7 maintext CODE >98:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
+7E9 maintext CODE >99:C:\Ext\SE1\pic16-ws2812-proteus\mplabx\ws2812-pic16f1717.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -271,10 +277,9 @@ _PWM4CON 61C 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _PWM4DCH 61B 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _PWM4DCL 61A 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_WDT_Initialize D36 0 CODE 0 text2 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_WDT_Initialize C60 0 CODE 0 text2 dist/default/production\ws2812-pic16f1717.X.production.o
 main@i 75 0 COMMON 1 cstackCOMMON dist/default/production\ws2812-pic16f1717.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-_CLC3CONbits F24 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _LATA 10C 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _LATB 10D 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _LATC 10E 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
@@ -287,21 +292,21 @@ _WPUB 20D 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _WPUC 20E 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _WPUD 20F 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _WPUE 210 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\lward\AppData\Local\Temp\saks.o
-_main F38 0 CODE 0 maintext dist/default/production\ws2812-pic16f1717.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\lward\AppData\Local\Temp\sek.o
+_main E62 0 CODE 0 maintext dist/default/production\ws2812-pic16f1717.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-start 4 0 CODE 0 init C:\Users\lward\AppData\Local\Temp\saks.o
+start 4 0 CODE 0 init C:\Users\lward\AppData\Local\Temp\sek.o
 __size_of_main 0 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _OPTION_REGbits 95 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-_TMR2_Initialize D36 0 CODE 0 text3 dist/default/production\ws2812-pic16f1717.X.production.o
+_TMR2_Initialize C60 0 CODE 0 text3 dist/default/production\ws2812-pic16f1717.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\saks.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\saks.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\saks.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\saks.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\saks.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\saks.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\sek.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\sek.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\sek.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\sek.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\sek.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\lward\AppData\Local\Temp\sek.o
 wtemp0 7E 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 _CLCIN0PPS E28 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
@@ -319,10 +324,10 @@ _INLVLB 38D 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _INLVLC 38E 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _INLVLD 38F 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _INLVLE 390 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-___stackhi 23EF 0 ABS 0 - C:\Users\lward\AppData\Local\Temp\saks.o
-___stacklo 2000 0 ABS 0 - C:\Users\lward\AppData\Local\Temp\saks.o
+___stackhi 23EF 0 ABS 0 - C:\Users\lward\AppData\Local\Temp\sek.o
+___stacklo 2000 0 ABS 0 - C:\Users\lward\AppData\Local\Temp\sek.o
 __size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-_PIN_MANAGER_Initialize E92 0 CODE 0 text6 dist/default/production\ws2812-pic16f1717.X.production.o
+_PIN_MANAGER_Initialize DBC 0 CODE 0 text6 dist/default/production\ws2812-pic16f1717.X.production.o
 start_initialization FFA 0 CODE 0 cinit dist/default/production\ws2812-pic16f1717.X.production.o
 _ODCONA 28C 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _ODCONB 28D 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
@@ -336,10 +341,10 @@ _RB1PPS E99 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _RB2PPS E9A 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _RC3PPS EA3 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _RC5PPS EA5 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-__end_of_SYSTEM_Initialize DF4 0 CODE 0 text1 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_SYSTEM_Initialize D1E 0 CODE 0 text1 dist/default/production\ws2812-pic16f1717.X.production.o
 _WDTCON 97 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 __size_of_SPI_Open 0 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\lward\AppData\Local\Temp\saks.o
+___int_sp 0 0 STACK 2 stack C:\Users\lward\AppData\Local\Temp\sek.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -435,7 +440,7 @@ __Lsfr29 0 0 ABS 0 sfr29 -
 __Lsfr30 0 0 ABS 0 sfr30 -
 __Lsfr31 0 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
-__end_of_CLC3_Initialize D9E 0 CODE 0 text8 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_CLC3_Initialize CC8 0 CODE 0 text8 dist/default/production\ws2812-pic16f1717.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 4 0 CODE 0 init -
@@ -483,15 +488,15 @@ __S0 804 0 ABS 0 - -
 __S1 79 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 SPI_Open@spiUniqueConfiguration 73 0 COMMON 1 cstackCOMMON dist/default/production\ws2812-pic16f1717.X.production.o
-_SPI_Open DF4 0 CODE 0 text9 dist/default/production\ws2812-pic16f1717.X.production.o
-_SYSTEM_Initialize DC8 0 CODE 0 text1 dist/default/production\ws2812-pic16f1717.X.production.o
-__end_of_SPI_Open E92 0 CODE 0 text9 dist/default/production\ws2812-pic16f1717.X.production.o
+_SPI_Open D1E 0 CODE 0 text9 dist/default/production\ws2812-pic16f1717.X.production.o
+_SYSTEM_Initialize CF2 0 CODE 0 text1 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_SPI_Open DBC 0 CODE 0 text9 dist/default/production\ws2812-pic16f1717.X.production.o
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\lward\AppData\Local\Temp\saks.o
-_CLC3_Initialize D74 0 CODE 0 text8 dist/default/production\ws2812-pic16f1717.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\lward\AppData\Local\Temp\sek.o
+_CLC3_Initialize C9E 0 CODE 0 text8 dist/default/production\ws2812-pic16f1717.X.production.o
 __Lstringtext1 0 0 ABS 0 stringtext1 -
-__end_of_PWM4_Initialize D5C 0 CODE 0 text5 dist/default/production\ws2812-pic16f1717.X.production.o
-__end_of_PIN_MANAGER_Initialize F38 0 CODE 0 text6 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_PWM4_Initialize C86 0 CODE 0 text5 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_PIN_MANAGER_Initialize E62 0 CODE 0 text6 dist/default/production\ws2812-pic16f1717.X.production.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -514,40 +519,40 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext F38 0 CODE 0 maintext dist/default/production\ws2812-pic16f1717.X.production.o
+__pmaintext E62 0 CODE 0 maintext dist/default/production\ws2812-pic16f1717.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
-_SPI_Initialize D9E 0 CODE 0 text4 dist/default/production\ws2812-pic16f1717.X.production.o
+_SPI_Initialize CC8 0 CODE 0 text4 dist/default/production\ws2812-pic16f1717.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-main@i_75 77 0 COMMON 1 cstackCOMMON dist/default/production\ws2812-pic16f1717.X.production.o
+main@i_346 77 0 COMMON 1 cstackCOMMON dist/default/production\ws2812-pic16f1717.X.production.o
 _OSCTUNE 98 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-_PWM4_Initialize D46 0 CODE 0 text5 dist/default/production\ws2812-pic16f1717.X.production.o
+_PWM4_Initialize C70 0 CODE 0 text5 dist/default/production\ws2812-pic16f1717.X.production.o
 _PIR1bits 11 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 __Lend_init 4 0 CODE 0 end_init -
 __end_of_spi_configuration 1008 0 STRCODE 0 stringtext1 dist/default/production\ws2812-pic16f1717.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization FFA 0 CODE 0 cinit dist/default/production\ws2812-pic16f1717.X.production.o
 __Hintentry 4 0 CODE 0 intentry -
-__end_of_SPI_Initialize DC8 0 CODE 0 text4 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_SPI_Initialize CF2 0 CODE 0 text4 dist/default/production\ws2812-pic16f1717.X.production.o
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
 _SSPCLKPPS E20 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 _SSPDATPPS E21 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 __size_of_CLC3_Initialize 0 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext1 DC8 0 CODE 0 text1 dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext2 D2E 0 CODE 0 text2 dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext3 D36 0 CODE 0 text3 dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext4 D9E 0 CODE 0 text4 dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext5 D46 0 CODE 0 text5 dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext6 E92 0 CODE 0 text6 dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext7 D5C 0 CODE 0 text7 dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext8 D74 0 CODE 0 text8 dist/default/production\ws2812-pic16f1717.X.production.o
-__ptext9 DF4 0 CODE 0 text9 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext1 CF2 0 CODE 0 text1 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext2 C58 0 CODE 0 text2 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext3 C60 0 CODE 0 text3 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext4 CC8 0 CODE 0 text4 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext5 C70 0 CODE 0 text5 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext6 DBC 0 CODE 0 text6 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext7 C86 0 CODE 0 text7 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext8 C9E 0 CODE 0 text8 dist/default/production\ws2812-pic16f1717.X.production.o
+__ptext9 D1E 0 CODE 0 text9 dist/default/production\ws2812-pic16f1717.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -577,12 +582,11 @@ _TRISE 90 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-_WDT_Initialize D2E 0 CODE 0 text2 dist/default/production\ws2812-pic16f1717.X.production.o
-__end_of_OSCILLATOR_Initialize D74 0 CODE 0 text7 dist/default/production\ws2812-pic16f1717.X.production.o
+_WDT_Initialize C58 0 CODE 0 text2 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_OSCILLATOR_Initialize C9E 0 CODE 0 text7 dist/default/production\ws2812-pic16f1717.X.production.o
 __initialization FFA 0 CODE 0 cinit dist/default/production\ws2812-pic16f1717.X.production.o
-_T2CONbits 1C 0 ABS 0 - dist/default/production\ws2812-pic16f1717.X.production.o
-_OSCILLATOR_Initialize D5C 0 CODE 0 text7 dist/default/production\ws2812-pic16f1717.X.production.o
-__end_of_TMR2_Initialize D46 0 CODE 0 text3 dist/default/production\ws2812-pic16f1717.X.production.o
+_OSCILLATOR_Initialize C86 0 CODE 0 text7 dist/default/production\ws2812-pic16f1717.X.production.o
+__end_of_TMR2_Initialize C70 0 CODE 0 text3 dist/default/production\ws2812-pic16f1717.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -609,16 +613,16 @@ __end_of_TMR2_Initialize D46 0 CODE 0 text3 dist/default/production\ws2812-pic16
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FD FFA 3 2
-text1 0 6E4 DC8 16 2
-text2 0 697 D2E 4 2
-text3 0 69B D36 8 2
-text4 0 6CF D9E 15 2
-text5 0 6A3 D46 B 2
-text6 0 749 E92 53 2
-text7 0 6AE D5C C 2
-text8 0 6BA D74 15 2
-text9 0 6FA DF4 4F 2
-maintext 0 79C F38 61 2
+text1 0 679 CF2 16 2
+text2 0 62C C58 4 2
+text3 0 630 C60 8 2
+text4 0 664 CC8 15 2
+text5 0 638 C70 B 2
+text6 0 6DE DBC 53 2
+text7 0 643 C86 C 2
+text8 0 64F C9E 15 2
+text9 0 68F D1E 4F 2
+maintext 0 731 E62 CC 2
 cstackCOMMON 1 70 70 9 1
 stringtext1 0 800 1000 4 2
 reset_vec 0 0 0 4 2

@@ -70,7 +70,7 @@
     // Select timer
     CCPTMRSbits.P4TSEL = 0;
  }
-
+/*
  void PWM4_LoadDutyValue(uint16_t dutyValue)
  {
      // Writing to 8 MSBs of PWM duty cycle in PWMDCH register
@@ -79,6 +79,8 @@
      // Writing to 2 LSBs of PWM duty cycle in PWMDCL register
      PWM4DCL = (dutyValue & 0x0003)<<6;
  }
+ */
+
  /**
   End of File
  */

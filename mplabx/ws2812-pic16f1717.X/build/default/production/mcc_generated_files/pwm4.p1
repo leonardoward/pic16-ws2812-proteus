@@ -977,26 +977,3 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pwm4.c: 72:  }
 [e :UE 782 ]
 }
-"74
-[; ;mcc_generated_files/pwm4.c: 74:  void PWM4_LoadDutyValue(uint16_t dutyValue)
-[v _PWM4_LoadDutyValue `(v ~T0 @X0 1 ef1`us ]
-"75
-[; ;mcc_generated_files/pwm4.c: 75:  {
-{
-[e :U _PWM4_LoadDutyValue ]
-"74
-[; ;mcc_generated_files/pwm4.c: 74:  void PWM4_LoadDutyValue(uint16_t dutyValue)
-[v _dutyValue `us ~T0 @X0 1 r1 ]
-"75
-[; ;mcc_generated_files/pwm4.c: 75:  {
-[f ]
-"77
-[; ;mcc_generated_files/pwm4.c: 77:      PWM4DCH = (dutyValue & 0x03FC)>>2;
-[e = _PWM4DCH -> >> & -> _dutyValue `ui -> -> 1020 `i `ui -> 2 `i `uc ]
-"80
-[; ;mcc_generated_files/pwm4.c: 80:      PWM4DCL = (dutyValue & 0x0003)<<6;
-[e = _PWM4DCL -> << & -> _dutyValue `ui -> -> 3 `i `ui -> 6 `i `uc ]
-"81
-[; ;mcc_generated_files/pwm4.c: 81:  }
-[e :UE 783 ]
-}

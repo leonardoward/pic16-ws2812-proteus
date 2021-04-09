@@ -9677,9 +9677,3 @@ void CLC3_Initialize(void)
     CLC3CON = 0x80;
 
 }
-
-
-_Bool CLC3_OutputStatusGet(void)
-{
-    return(CLC3CONbits.LC3OUT);
-}
